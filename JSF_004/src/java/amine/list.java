@@ -23,6 +23,7 @@ public class list {
     String oneSelect;
     ArrayList<String> oneSelectList = new ArrayList<>();
     
+    String radioOneSelect;
     String array[]={"GDO'lu","GDO'suz"};
     
 
@@ -67,6 +68,14 @@ public class list {
 
     public void setArray(String[] array) {
         this.array = array;
+    }
+
+    public String getRadioOneSelect() {
+        return radioOneSelect;
+    }
+
+    public void setRadioOneSelect(String radioOneSelect) {
+        this.radioOneSelect = radioOneSelect;
     }
 
     /**

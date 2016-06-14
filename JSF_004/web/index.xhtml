@@ -14,15 +14,19 @@
                 </h:selectManyCheckbox>
 
                 <h:selectOneListbox value="#{list.oneSelect}">
-                    <f:selectItems value="#{list.array}"/>
-                </h:selectOneListbox>            
+                    <f:selectItems value="#{list.oneSelectList}"/>
+                </h:selectOneListbox>
                 
+                <h:selectOneRadio value="#{list.radioOneSelect}">
+                    <f:selectItems value="#{list.array}"/>
+                </h:selectOneRadio> 
 
                 <h:commandButton value="Gönder" action="index"/>
 
 
                 <h:outputLabel value="#{list.manycb}"/>
                 <h:outputLabel value="#{list.oneSelect}"/>
+                <h:outputLabel value="#{list.radioOneSelect}"/>
             </h:panelGrid>
 
 
