@@ -20,6 +20,10 @@ public class list {
     ArrayList<String> manycb = new ArrayList<>();
     ArrayList<String> manycbMembers = new ArrayList<>();
     
+    String oneSelect;
+    ArrayList<String> oneSelectList = new ArrayList<>();
+    
+    String array[]={"GDO'lu","GDO'suz"};
     
 
     public ArrayList<String> getOneSelectList() {
@@ -29,7 +33,7 @@ public class list {
     public void setOneSelectList(ArrayList<String> oneSelectList) {
         this.oneSelectList = oneSelectList;
     }
-    ArrayList<String> oneSelectList = new ArrayList<>();
+    
 
     public String getOneSelect() {
         return oneSelect;
@@ -39,7 +43,7 @@ public class list {
         this.oneSelect = oneSelect;
     }
 
-    String oneSelect;
+    
 
     public ArrayList<String> getManycb() {
         return manycb;
@@ -55,6 +59,14 @@ public class list {
 
     public void setManycbMembers(ArrayList<String> manycbMembers) {
         this.manycbMembers = manycbMembers;
+    }
+
+    public String[] getArray() {
+        return array;
+    }
+
+    public void setArray(String[] array) {
+        this.array = array;
     }
 
     /**
