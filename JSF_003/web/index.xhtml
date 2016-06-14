@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+     xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+      <title>AmineYesilyurt</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:selectManyCheckbox value="#{receive.checkbox}">
+                <f:selectItem itemValue="simit" itemLabel="simit"/>
+                <f:selectItem itemValue="ayran" itemLabel="ayran"/>
+            </h:selectManyCheckbox>
+            
+            <h:selectOneRadio value="#{receive.radio}">
+                <f:selectItem itemValue="1" itemLabel="1"/>
+                <f:selectItem itemValue="2" itemLabel="2"/>
+            </h:selectOneRadio>         
+                
+            <h:selectManyListbox value="#{receive.manyList}">
+                <f:selectItem itemValue="elma" itemLabel="elma"/>
+                <f:selectItem itemValue="portakal" itemLabel="portakal"/> 
+                <f:selectItem itemValue="muz" itemLabel="muz"/>
+            </h:selectManyListbox>
+            
+            <h:selectOneListbox value="#{receive.oneList}">
+                <f:selectItem itemValue="student" itemLabel="student"/>
+                <f:selectItem itemValue="teacher" itemLabel="teacher"/> 
+                <f:selectItem itemValue="child" itemLabel="child"/>
+            </h:selectOneListbox>
+            
+            <h:selectBooleanCheckbox>
+                
+            </h:selectBooleanCheckbox>
+            
+            <h:commandButton value="Gönder"/>
+            
+            <h:outputText value="#{receive.manyList}" />
+            <h:outputText value="#{receive.checkbox}" />            
+            <h:outputText value="#{receive.oneList}" />
+            <h:outputText value="#{receive.radio}" />
+            
+            
+                
+        </h:form>
+    </h:body>
+</html>
+
